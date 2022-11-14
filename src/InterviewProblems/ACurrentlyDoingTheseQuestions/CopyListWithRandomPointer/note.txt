@@ -1,0 +1,4 @@
+TODO: Create a custom linked list just for this LeetCode problem.
+
+See my original solution here:
+https://leetcode.com/problems/copy-list-with-random-pointer/
