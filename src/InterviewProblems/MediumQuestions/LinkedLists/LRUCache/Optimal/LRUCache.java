@@ -1,4 +1,4 @@
-package InterviewProblems.ACurrentlyDoingTheseQuestions.LRUCache.Optimal;
+package InterviewProblems.MediumQuestions.LinkedLists.LRUCache.Optimal;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -66,7 +66,7 @@ class LRUCache {
         // ["LRUCache","get","put","get","put","put","get","get"]
         // [[2],[2],[2,6],[1],[1,5],[1,2],[1],[2]]
         // expected: [null,-1,null,-1,null,null,2,6]
-        InterviewProblems.ACurrentlyDoingTheseQuestions.LRUCache.MySolution.LRUCache lruCache5 = new InterviewProblems.ACurrentlyDoingTheseQuestions.LRUCache.MySolution.LRUCache(2);
+        InterviewProblems.MediumQuestions.LinkedLists.LRUCache.MySolution.LRUCache lruCache5 = new InterviewProblems.MediumQuestions.LinkedLists.LRUCache.MySolution.LRUCache(2);
         System.out.println(lruCache5.get(2));  // return -1 (not found)
         lruCache5.put(2, 6);  // cache is {2=6}
         System.out.println(lruCache5.get(1));  // return -1 (not found)

@@ -1,4 +1,4 @@
-package InterviewProblems.ACurrentlyDoingTheseQuestions.LRUCache.MySolution;
+package InterviewProblems.MediumQuestions.LinkedLists.LRUCache.MySolution;
 
 public class Node {
 
