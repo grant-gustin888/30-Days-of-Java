@@ -31,7 +31,7 @@ public class IncreasingOrderBST {
         root1.rightChild.rightChild.leftChild = new BinaryTree(7);
         root1.rightChild.rightChild.rightChild = new BinaryTree(9);
         BinaryTree increasingBST1 = increasingOrderBST.increasingBST(root1);
-        increasingBST1.inorderTraversal(increasingBST1);
+        increasingBST1.inorderTraversalRecursive(increasingBST1);
 
         // Input: root = [5, 1, 7]
         // Output: [1, null, 5, null, 7]
@@ -39,7 +39,7 @@ public class IncreasingOrderBST {
         root2.leftChild = new BinaryTree(1);
         root2.rightChild = new BinaryTree(7);
         BinaryTree increasingBST2 = increasingOrderBST.increasingBST(root2);
-        increasingBST2.inorderTraversal(increasingBST2);
+        increasingBST2.inorderTraversalRecursive(increasingBST2);
     }
 
     /**
