@@ -1,5 +1,7 @@
 package DataStructures.CustomDataStructures.BinaryTree;
 
+import java.util.Stack;
+
 public class BinaryTree {
 
     public int value;
@@ -32,6 +34,37 @@ public class BinaryTree {
         inorderTraversalRecursive(root.leftChild, depth + 1);
         System.out.println(spaces + root.value);
         inorderTraversalRecursive(root.rightChild, depth + 1);
+    }
+
+    public void inorderTraversalIterative(BinaryTree root) {
+        if (root == null) {
+            return;
+        }
+
+        Stack<BinaryTree> stack = new Stack<>();
+        BinaryTree current = root;
+        while (current != null || !stack.isEmpty()) {
+            // Go as far left as possible... before going to the right child
+            if (current != null) {
+                stack.push(current);
+                current = current.leftChild;
+            } else {
+                current = stack.pop();
+                System.out.print(current.value + " ");
+                current = current.rightChild;
+            }
+
+            // alternative solution:
+            //
+            // while (current != null) {
+            //     stack.push(current);
+            //     current = current.leftChild;
+            // }
+            //
+            // current = stack.pop();
+            // System.out.print(current.value + " ");
+            // current = current.rightChild;
+        }
     }
 
     public void levelOrderTraversal(BinaryTree root) {
