@@ -1,14 +1,18 @@
-package InterviewProblems.MediumQuestions.Backtracking.Subsets;
+package InterviewProblems.MediumQuestions.Backtracking.Subsets.OriginalSolution;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Subsets {
 
+    // Inspired by NeetCode solution: https://neetcode.io/practice
+    // Backtracking > "Subsets"
+
     // Let n = the length of the nums array.
     //
-    // Time: O(2 ^ n)
-    // --> We produce 2 ^ n subsets.
+    // Time: O(n * 2 ^ n)
+    // --> We produce 2 ^ n subsets, and spend O(n) creating a copy of each subset
+    // to add to our list of subsets.
     // Space: O(n)
     // --> We store up to n elements in the call stack when performing recursive calls.
 
