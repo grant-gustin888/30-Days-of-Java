@@ -1,4 +1,4 @@
-package InterviewProblems.MediumQuestions.Backtracking.Permutations;
+package InterviewProblems.MediumQuestions.Backtracking.Permutations.RecursiveSolution1;
 
 import java.util.ArrayList;
 import java.util.Collections;
