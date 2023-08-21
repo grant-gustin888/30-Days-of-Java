@@ -122,7 +122,7 @@ doubly circular linked list -- DONE FOR NOW
 // todo: splay trees
 dynamic arrays -- DONE
 // todo: skip list
-// todo: huffman trees
+huffman trees -- DONE
 disjoint sets with singly circular linked list -- DONE FOR NOW
 disjoint sets with doubly circular linked list -- DONE FOR NOW
 disjoint sets with singly linked list with extra pointers to head -- DONE FOR NOW
